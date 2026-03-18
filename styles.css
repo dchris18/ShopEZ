@@ -57,3 +57,21 @@ body{
   right:18%;
   bottom:38%;
 }
+
+.melon{
+  position:absolute;
+  width:9vw;
+  height:9vw;
+  border-radius:50%;
+  background: radial-gradient(circle at 30% 30%, #c79a35, #3c2c05);
+}
+
+.melon1{
+  left:40%;
+  bottom:30%;
+}
+
+.melon2{
+  left:47%;
+  bottom:33%;
+}
