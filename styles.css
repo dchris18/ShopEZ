@@ -75,3 +75,28 @@ body{
   left:47%;
   bottom:33%;
 }
+
+.orange{
+  position:absolute;
+  width:9vw;
+  height:7vw;
+  border-radius:50%;
+  background:#f39a3c;
+
+  left:45%;
+  bottom:22%;
+}
+
+.cup{
+  position:absolute;
+  width:6vw;
+  height:10vw;
+
+  background:#8a7045;
+
+  left:8%;
+  bottom:22%;
+
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+}
