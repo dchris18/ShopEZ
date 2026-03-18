@@ -100,3 +100,20 @@ body{
   border-bottom-left-radius:50%;
   border-bottom-right-radius:50%;
 }
+
+.apple,
+.melon,
+.orange{
+  box-shadow:0.5vw 1vw 1vw rgba(0,0,0,0.3);
+}
+
+.apple,
+.melon{
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-1vh);}
+  100%{transform:translateY(0);}
+}
