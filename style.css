@@ -1,186 +1,201 @@
-body{
-  margin:0;
-  background:#eee9dd;
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee9dd;
+  overflow: hidden;
 }
 
-.scene{
-  position:relative;
-  width:100vw;
-  height:100vh;
-  overflow:hidden;
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* background */
-.wall{
-  position:absolute;
-  top:0;
-  width:100%;
-  height:50%;
-  background:#d4b057;
+.wall {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to right, #d1aa4e, #e0c98f 50%, #cfa64a);
 }
 
-.table{
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:50%;
-  background:linear-gradient(to bottom, #4b2807, #815b1e);
+.table {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, #4b2807 0%, #6b4515 40%, #8a6525 100%);
 }
 
-.line{
-  position:absolute;
-  top:50%;
-  width:100%;
-  height:0.2vh;
-  background:rgba(255,255,255,0.15);
+.line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 0.2%;
+  background: rgba(255, 255, 255, 0.08);
 }
 
-/* plate */
-.plate{
-  position:absolute;
-  width:43vw;
-  height:18vw;
-  right:5%;
-  bottom:20%;
-  background:radial-gradient(circle at 50% 35%, #efd58f, #e1bd69 65%, #f8f1df 100%);
-  border-radius:50%;
-  box-shadow:0 0.6vw 0.6vw rgba(0,0,0,0.12);
+.plate {
+  position: absolute;
+  width: 48%;
+  height: 26%;
+  right: 3%;
+  bottom: 24%;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at 50% 30%,
+    #f5deb3 0%,
+    #e5c67a 52%,
+    #d4a94f 78%,
+    #fff3d6 100%
+  );
+  box-shadow:
+    0 0.6vw 1vw rgba(0, 0, 0, 0.12),
+    inset 0 -0.3vw 0.8vw rgba(255, 255, 255, 0.25);
 }
 
-/* red fruit */
-.apple{
-  position:absolute;
-  border-radius:50%;
-  background:radial-gradient(circle at 35% 35%, #d85c30, #c74d25 55%, #4a0e04 100%);
-  box-shadow:0.5vw 1vw 1vw rgba(0,0,0,0.2);
+.orange,
+.melon {
+  position: absolute;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
 }
 
-.apple1{
-  width:14vw;
-  height:14vw;
-  right:24%;
-  bottom:34%;
+.orange {
+  background: radial-gradient(circle at 35% 35%, #d85c30, #c74d25 55%, #4a0e04 100%);
+  box-shadow: 0.4vw 0.8vw 1vw rgba(0, 0, 0, 0.18);
 }
 
-.apple2{
-  width:14vw;
-  height:14vw;
-  right:10%;
-  bottom:36%;
+.orange1 {
+  width: 15%;
+  right: 27%;
+  bottom: 35%;
 }
 
-.apple3{
-  width:14vw;
-  height:14vw;
-  right:15%;
-  bottom:48%;
+.orange2 {
+  width: 15%;
+  right: 9%;
+  bottom: 36%;
 }
 
-.apple4{
-  width:14vw;
-  height:14vw;
-  right:20%;
-  bottom:28%;
+.orange3 {
+  width: 15%;
+  right: 17%;
+  bottom: 50%;
 }
 
-/* dark dots on fruit */
-.dot{
-  position:absolute;
-  width:1.8vw;
-  height:1.8vw;
-  background:#2a0703;
-  border-radius:50%;
+.orange4 {
+  width: 15%;
+  right: 21%;
+  bottom: 27%;
 }
 
-.dot1{
-  right:22%;
-  bottom:66%;
+.dot {
+  position: absolute;
+  width: 1.6%;
+  aspect-ratio: 1 / 1;
+  background: #2a0703;
+  border-radius: 50%;
 }
 
-.dot2{
-  right:26%;
-  bottom:45.5%;
+.dot1 {
+  right: 25%;
+  bottom: 67.5%;
 }
 
-/* brown fruit */
-.melon{
-  position:absolute;
-  border-radius:50%;
-  background:radial-gradient(circle at 32% 65%, #af892d, #8e6e1f 55%, #221300 100%);
-  box-shadow:0.5vw 1vw 1vw rgba(0,0,0,0.2);
+.dot2 {
+  right: 28%;
+  bottom: 44.5%;
 }
 
-.melon1{
-  width:15vw;
-  height:15vw;
-  left:40%;
-  bottom:38%;
+.melon {
+  background: radial-gradient(circle at 32% 65%, #af892d, #8e6e1f 55%, #221300 100%);
+  box-shadow: 0.4vw 0.8vw 1vw rgba(0, 0, 0, 0.18);
 }
 
-.melon2{
-  width:14vw;
-  height:14vw;
-  left:35%;
-  bottom:29%;
+.melon1 {
+  width: 15%;
+  left: 37%;
+  bottom: 38%;
 }
 
-/* small yellow fruit on plate */
-.smallfruit{
-  position:absolute;
-  width:6vw;
-  height:5vw;
-  right:38%;
-  bottom:31%;
-  background:#e0b648;
-  border-radius:50%;
+.melon2 {
+  width: 14.5%;
+  left: 30%;
+  bottom: 30%;
 }
 
-/* orange on table */
-.orange{
-  position:absolute;
-  width:11vw;
-  height:10vw;
-  left:20%;
-  bottom:14%;
-  background:#e79a42;
-  border-radius:50%;
-  box-shadow:0.4vw 0.8vw 1vw rgba(0,0,0,0.15);
+.lemonfruit {
+  position: absolute;
+  transform: skew(20deg);
+  width: 8%;
+  height: 10%;
+  right: 39%;
+  bottom: 32%;
+  border-radius: 50%;
+  background: linear-gradient(to right, goldenrod, darkgoldenrod);
 }
 
-.orange-bump{
-  position:absolute;
-  width:1.8vw;
-  height:1.8vw;
-  background:#cf8132;
-  border-radius:50%;
-  top:40%;
+.lemon {
+  position: absolute;
+  transform: skew(-10deg);
+  width: 17%;
+  height: 20%;
+  left: 26%;
+  bottom: 13%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 40%, #f2a24a, #d07d2e 70%, #a45e1d 100%);
+  box-shadow: 0.3vw 0.6vw 0.9vw rgba(0, 0, 0, 0.14);
 }
 
-.left-bump{
-  left:-0.5vw;
+.lemon-bump {
+  position: absolute;
+  width: 17%;
+  aspect-ratio: 1 / 1;
+  background: #cf8132;
+  border-radius: 50%;
 }
 
-.right-bump{
-  right:-0.5vw;
+.left-bump {
+  left: -4%;
+  top: 55%;
 }
 
-/* cup */
+.right-bump {
+  right: -1%;
+  top: 15%;
+}
+
 .cup{
   position:absolute;
-  width:7vw;
-  height:16vw;
-  left:-1%;
-  bottom:9%;
-  background:linear-gradient(to right, #75603a, #8a7447, #6d5935);
-  clip-path:polygon(10% 0%, 90% 0%, 78% 100%, 22% 100%);
+  width:13.5cqw;
+  height:31cqh;
+  left:-3%;
+  bottom:6%;
+
+  border-radius:0 0 40% 40%;
+
+  background:#8f774a;
+
+  box-shadow:
+    inset -1cqw 0 2cqw rgba(0,0,0,0.25),
+    inset 1cqw 0 2cqw rgba(255,255,255,0.15);
 }
 
 .cup-top{
   position:absolute;
-  top:-1.7vw;
-  left:-0.2vw;
-  width:7.4vw;
-  height:3vw;
-  background:#1a0000;
+  top:-4cqh;
+  left:-1%;
+  width:101%;
+  height:9cqh;
+
   border-radius:50%;
+
+  background:#180000;
+
+  box-shadow:
+    inset 0.5cqw 0.5cqh 1cqh rgba(255,255,255,0.15),
+    inset -0.5cqw -0.5cqh 1cqh rgba(0,0,0,0.4);
 }
